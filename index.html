@@ -7,36 +7,55 @@
     <link rel="stylesheet" href="style.css"/>
 </head>    
 <body>
-	
-	<div class="nav-container">	
-		<nav>
-			<div class="logo">
-					AZ.
-			</div>	
-			<ul class="nav-items">
-					<li><a href="#">My Skills</a></li>
-					<li><a href="#">My Work</a></li>
-					<li><a href="#">Contact</a></li>
+	<header>
+		<div class="menu-toggler">
+			<div class="bar half start"></div>
+			<div class="bar"></div>
+			<div class="bar half end"></div>
+		</div>
+		<nav class="nav-container">
+			<ul class="nav-list">
+				<li>
+					<a href="#Home" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a href="#About" class="nav-link">About</a>
+				</li>
+				<li>
+					<a href="#Services" class="nav-link">Services</a>
+				</li>
+				<li>
+					<a href="#Portfolio" class="nav-link">Portfolio</a>
+				</li>
+				<li>
+					<a href="#Contact" class="nav-link">Contact</a>
+				</li>
 			</ul>
 		</nav>
-	</div>
-	
-	<div class="header-container">
-		<header>
-			<div class="hero-container">
-				<h1>Hi, I'm Alek</h1>
-				<p>
-					I create beautifully crafted web experiences that modern trends demand.
-				</p>
-				<a href="#">Contact Me</a>
-			</div>
-			
-			<div class="hero-image">
-				<img src="images/m.png" alt="">	
-			</div>
-		</header>
-	</div>
+		<div class="landing-text">
+			<h1>Alek Zeledon</h1>
+			<h6>UI | UX Designer and Web Developer</h6>
+		</div>
+	</header>
 
+	<section class="about" id="about">
+		<div class="container">
+			<div class="profile-img">
+				<img src="images/" alt="">
+			</div>
+			<div class="about details">
+				<div class="about-heading">
+					<h1>About</h1>
+					<h6>Myself</h6>
+				</div>
+				<p>
+				   	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione maiores
+				   	impedit culpa distinctio eligendi aut voluptatum dignissimos incidunt deserunt rem
+				    voluptatibus dicta nesciunt, corrupti laborum molestias modi vitae voluptatem.
+				</p>
+			</div>
+		</div>
+	
 	<section class="services" id="services">
 		<div class="container">
 			<div class="section-heading">
@@ -73,14 +92,87 @@
 				</div>
 			</div>
 		</div>
-
-
 	</section>
 
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Portfolio</h1>
+				<h6>View my recent work</h6>
+		</div>
+		<div class="portfolio-item">
+			<div class="portfolio-img">
+				<img src="images/software.jpg" alt="">
+			</div>
+			<div class="portfolio-description">
+				<h6>Web Development</h6>
+				<h1>Blog Website</h1>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempora facere, hic! Accusantium dicta perferendis autem 
+				</p>
+				<a href="#" class="cta">View Details</a>
+			</div>
+		</div>
+		<div class="portfolio-item">
+			<div class="portfolio-description">
+				<h6>Web Design</h6>
+				<h1>Product Layout</h1>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempora facere, hic! Accusantium dicta perferendis autem 
+				</p>
+				<a href="#" class="cta">View Details</a>
+			</div>
+			<div class="portfolio-img">
+				<img src="images/photography.jpg" alt="">
+			</div>
+		</div>
+		<div class="portfolio-item">
+			<div class="portfolio-img">
+				<img src="images/plumbing.jpg" alt="">
+			</div>
+			<div class="portfolio-description">
+				<h6>Web Design</h6>
+				<h1>Product Sketch</h1>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempora facere, hic! Accusantium dicta perferendis autem 
+				</p>
+				<a href="#" class="cta">View Details</a>
+			</div>
+		</div>
+	</section>
 
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Contact</h1>
+				<h6>You totally need to hire me</h6>
+			</div>
+		</div>
+		<form action="">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name..." required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email..." required>
+			<label for="service">Services</label>
+			<select name="service" id="service">
+				<option value="">Web Design</option>
+				<option value="">Web Development</option>
+				<option value="">Web Design/Development</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea name="" id="subject" cols="10" rows="10"></textarea>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
 
-
-
+	<footer>
+		<div class="copyright">
+			<div class="up" id="up">
+				<i class="fas fa-chevron-up"></i>
+				<p>&copy; 2021 Alek Zeledon</p>
+			</div>
+		</div>
+	</footer>
 
 	<script src="main.js"></script>
 </body>
