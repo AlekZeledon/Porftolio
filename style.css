@@ -43,7 +43,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section-heading h1 {
@@ -58,6 +58,10 @@ img {
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
 }
 
 header {
@@ -329,7 +333,7 @@ li {
   margin-bottom: 5rem;
 }
 
-.portfolio-item :last-child {
+.portfolio-item:last-child {
   margin-bottom: 0;
 }
 
@@ -337,11 +341,19 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 50rem;
 }
 
 .portfolio-description {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.portfolio-description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */
