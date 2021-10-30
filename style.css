@@ -19,6 +19,10 @@ body {
   background-size: cover;
 }
 
+section {
+  padding: 6rem 0;
+}
+
 a {
   text-decoration: none;
   color: #eee;
@@ -350,10 +354,231 @@ li {
           flex: 1;
 }
 
+.portfolio-description h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
 .portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.3;
+}
+
+.portfolio-description .cta {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: chartreuse;
+  -webkit-transition: color 650ms;
+  transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+  color: red;
+}
+
+.contact {
+  background-color: salmon;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: greenyellow;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: indigo;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  -webkit-transition: background-color 650ms;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: blueviolet;
+  background-color: coral;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: crimson;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.copyright p {
+  font-size: 1.3rem;
+}
+
+.up {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: darkgoldenrod;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.up i {
+  color: darkgreen;
+  font-size: 2rem;
+  margin: auto;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+            box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+            box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+}
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+  body {
+    background: url("images/bg1.jpg") no-repeat center fixed;
+    background-size: cover;
+  }
+  .landing-text h1 {
+    font-size: 15rem;
+  }
+  .landing-text h6 {
+    font-size: 1.7rem;
+  }
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  li {
+    margin: 2rem 0;
+  }
+  .nav-link {
+    font-size: 4.5rem;
+  }
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+  .about-details .nav-list {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .about-details li {
+    margin: 0 2rem;
+  }
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+  .icon-container i {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+  .landing-text h6 {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 3.5rem;
+  }
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+  .portfolio-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .portfolio-description {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  form {
+    width: 100%;
+  }
+  .up {
+    right: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
