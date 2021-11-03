@@ -257,11 +257,11 @@ li {
 }
 
 .profile-img {
-  min-width: 100px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 5rem;
+  min-width: 50%;
 }
 
 .about-details {
