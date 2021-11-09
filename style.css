@@ -17,7 +17,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: url("images/bg1.jpg") no-repeat center fixed;
+  background: #113350 no-repeat center fixed;
   background-size: cover;
 }
 
@@ -47,6 +47,15 @@ img {
   position: relative;
 }
 
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .section-heading {
   text-align: center;
   margin-bottom: 10rem;
@@ -54,7 +63,7 @@ img {
 
 .section-heading h1 {
   font-size: 3.5rem;
-  color: orange;
+  color: #ffa552;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -72,7 +81,7 @@ img {
 
 header {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
 .nav-container {
@@ -81,7 +90,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #16162d;
+  background-color: #324871;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -160,7 +169,7 @@ li {
 }
 
 .bar {
-  background: orange;
+  background: #ffa552;
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
@@ -214,7 +223,7 @@ li {
 .landing-text h1 {
   font-size: 20rem;
   font-family: "Poppins", arial;
-  background: #ff9292;
+  background: #d7e4ff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
@@ -227,6 +236,10 @@ li {
 .landing-text h6 {
   font-size: 2rem;
   font-weight: 300;
+}
+
+.about {
+  background-color: #324871;
 }
 
 .about .container {
@@ -308,8 +321,8 @@ li {
 .icon-container {
   width: 10rem;
   height: 10rem;
-  border: 3px solid #ffe838;
-  background-color: red;
+  border: 3px solid red;
+  background-color: #ffa552;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +332,7 @@ li {
 }
 
 .icon-container i {
-  color: #ffe838;
+  color: white;
   font-size: 5rem;
   margin: auto;
   -webkit-transform: rotate(-45deg);
@@ -374,7 +387,7 @@ li {
   margin-top: 2.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: chartreuse;
+  color: #ffa552;
   -webkit-transition: color 650ms;
   transition: color 650ms;
 }
@@ -384,7 +397,7 @@ li {
 }
 
 .contact {
-  background-color: salmon;
+  background-color: #324871;
 }
 
 form {
@@ -419,13 +432,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: blueviolet;
-  background-color: coral;
+  background-color: #ffa552;
 }
 
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: crimson;
+  background-color: #ffa552;
   padding: 2rem 0;
   position: relative;
 }
@@ -438,7 +451,7 @@ input[type="submit"]:hover {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background-color: darkgoldenrod;
+  background-color: red;
   top: -2.5rem;
   right: 5rem;
   border-radius: 100%;
@@ -489,7 +502,7 @@ input[type="submit"]:hover {
 /*media queries*/
 @media screen and (max-width: 768px) {
   body {
-    background: url("images/bg1.jpg") no-repeat center fixed;
+    background: #113350 no-repeat center fixed;
     background-size: cover;
   }
   .landing-text h1 {
