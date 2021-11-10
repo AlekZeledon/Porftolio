@@ -56,6 +56,10 @@ img {
   overflow: hidden;
 }
 
+.waves1 {
+  background: url("images/waves1.svg");
+}
+
 .section-heading {
   text-align: center;
   margin-bottom: 10rem;
