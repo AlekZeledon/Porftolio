@@ -17,7 +17,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #113350 no-repeat center fixed;
+  background: #122a40 no-repeat center fixed;
   background-size: cover;
 }
 
@@ -47,7 +47,8 @@ img {
   position: relative;
 }
 
-.spacer {
+.waves1 {
+  background-image: url("images/waves1.svg");
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
@@ -56,8 +57,14 @@ img {
   overflow: hidden;
 }
 
-.waves1 {
-  background-image: url("images/waves1.svg");
+.waves2 {
+  background-image: url("images/waves2.svg");
+  aspect-ratio: 960/50;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .section-heading {
@@ -67,7 +74,7 @@ img {
 
 .section-heading h1 {
   font-size: 3.5rem;
-  color: #ffa552;
+  color: #F76F26;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
@@ -94,7 +101,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #324871;
+  background-color: #235380;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -173,7 +180,7 @@ li {
 }
 
 .bar {
-  background: #ffa552;
+  background: #F76F26;
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
@@ -243,7 +250,7 @@ li {
 }
 
 .about {
-  background-color: #324871;
+  background-color: #534AD3;
 }
 
 .about .container {
@@ -290,6 +297,14 @@ li {
           flex: 1;
 }
 
+.services {
+  background-color: #FE675D;
+}
+
+.services h1 {
+  color: white;
+}
+
 .my-skills {
   margin-top: 10rem;
   display: -ms-grid;
@@ -327,7 +342,7 @@ li {
   width: 10rem;
   height: 10rem;
   border: 3px solid red;
-  background-color: #ffa552;
+  background-color: #F76F26;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,6 +357,10 @@ li {
   margin: auto;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.portfolio {
+  background-color: #FABC3C;
 }
 
 .portfolio-item {
@@ -392,7 +411,7 @@ li {
   margin-top: 2.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #ffa552;
+  color: #F76F26;
   -webkit-transition: color 650ms;
   transition: color 650ms;
 }
@@ -402,7 +421,7 @@ li {
 }
 
 .contact {
-  background-color: #324871;
+  background-color: #122A40;
 }
 
 form {
@@ -437,13 +456,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: blueviolet;
-  background-color: #ffa552;
+  background-color: #F76F26;
 }
 
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #ffa552;
+  background-color: #F76F26;
   padding: 2rem 0;
   position: relative;
 }
@@ -507,7 +526,7 @@ input[type="submit"]:hover {
 /*media queries*/
 @media screen and (max-width: 768px) {
   body {
-    background: #113350 no-repeat center fixed;
+    background: #122A40 no-repeat center fixed;
     background-size: cover;
   }
   .landing-text h1 {
