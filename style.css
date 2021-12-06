@@ -48,7 +48,7 @@ img {
 }
 
 .waves1 {
-  background-image: url("images/waves1.svg");
+  background: url("images/waves1.svg");
   aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ img {
 }
 
 .waves2 {
-  background-image: url("images/waves2.svg");
+  background: url("images/waves2.svg");
   aspect-ratio: 960/50;
   width: 100%;
   background-repeat: no-repeat;
